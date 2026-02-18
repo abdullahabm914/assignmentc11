@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lahore Smog Dashboard</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- ===== TOP STATUS BAR ===== -->
+  <!-- Using HEADER (NOT div) -->
+  <!-- Change bg-danger to bg-success if AQI < 100 -->
+  <header class="bg-danger text-white text-center py-4">
+    <h1>Lahore AQI: 420</h1>
+    <p class="lead mb-0">Status: Hazardous ☠</p>
+  </header>
+
+
+  <!-- ===== MAIN DASHBOARD ===== -->
+  <main class="container my-5">
+
+    <section class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card text-center shadow">
+          <div class="card-body">
+            <h5 class="card-title">Mask Required?</h5>
+            <p class="card-text text-danger fw-bold">YES 😷</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card text-center shadow">
+          <div class="card-body">
+            <h5 class="card-title">School Open?</h5>
+            <p class="card-text text-warning fw-bold">Closed 🚫</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card text-center shadow">
+          <div class="card-body">
+            <h5 class="card-title">Visibility Level</h5>
+            <p class="card-text text-danger fw-bold">Very Low 🌫</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ===== HEALTH ADVICE SECTION ===== -->
+  <!-- Using ARTICLE (independent content) -->
+  <article class="container mb-5">
+
+    <div class="alert alert-warning shadow">
+      <h4 class="alert-heading">Health Advice</h4>
+      <ul class="mb-0">
+        <li>Avoid outdoor activities</li>
+        <li>Wear N95 mask when outside</li>
+        <li>Keep windows closed</li>
+        <li>Use air purifiers indoors</li>
+      </ul>
+    </div>
+
+  </article>
+
+</body>
+</html>
